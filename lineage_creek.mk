@@ -26,8 +26,11 @@ $(call inherit-product, packages/apps/FastCharge/fastcharge.mk)
 PRODUCT_NAME              := lineage_creek
 PRODUCT_DEVICE            := creek
 PRODUCT_MANUFACTURER      := Xiaomi
-PRODUCT_BRAND             := POCO
-PRODUCT_MODEL             := POCO M7 4G
+PRODUCT_BRAND             := Redmi
+PRODUCT_MODEL             := Redmi 15
+
+WITH_GMS := false
+WITH_MICROG := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
@@ -36,3 +39,19 @@ WITH_EROFS := true
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="creek-user 16 BP2A.250605.031.A3 OS3.0.302.0.WBOMIXM release-keys" \
     BuildFingerprint=Redmi/creek_global/creek:16/BP2A.250605.031.A3/OS3.0.302.0.WBOMIXM:user/release-keys
+
+# Lunch banner maintainer variable
+RISING_MAINTAINER="KonekoDev"
+
+# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer)
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 685" \
+    RisingMaintainer="KonekoDev"
+
+RISING_MAINTAINER := KonekoDev
+
+# Disable/enable blur support, false by default
+TARGET_ENABLE_BLUR := true
+
+# Whether to ship aperture camera, false by default
+PRODUCT_NO_CAMERA := false
