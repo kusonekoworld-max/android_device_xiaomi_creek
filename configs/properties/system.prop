@@ -101,3 +101,12 @@ debug.cpurend.vsync=false
 ro.boot.vendor.qspa.modem=enabled
 
 
+
+# MistOS About Phone
+ro.mist.soc=Snapdragon 685
+ro.mist.battery=7000mAh
+ro.mist.display=144Hz FHD+
+ro.mist.camera=50MP
+ro.mist.front=8MP
+ro.mist.platform=SM6225
+ro.mist.screen=6.9"
