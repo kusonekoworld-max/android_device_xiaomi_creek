@@ -573,7 +573,7 @@
 
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
          If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <integer name="config_defaultRefreshRateInZone">0</integer>
 
     <!-- Baseline render frame rate ceiling for DisplayModeDirector's default vote.
          The AOSP default of 60 caps the render range at exactly the user minimum
