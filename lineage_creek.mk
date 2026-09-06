@@ -41,14 +41,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/creek_global/creek:16/BP2A.250605.031.A3/OS3.0.302.0.WBOMIXM:user/release-keys
 
 # Lunch banner maintainer variable
-RISING_MAINTAINER="KonekoDev"
 
-# Chipset/Maintainer properties (ro.rising.chipset/ro.rising.maintainer)
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon 685" \
-    RisingMaintainer="KonekoDev"
 
-RISING_MAINTAINER := KonekoDev
 
 # Disable/enable blur support, false by default
 TARGET_ENABLE_BLUR := true
