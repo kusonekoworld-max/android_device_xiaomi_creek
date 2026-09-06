@@ -29,6 +29,7 @@ PRODUCT_MANUFACTURER      := Xiaomi
 PRODUCT_BRAND             := Redmi
 PRODUCT_MODEL             := Redmi 15
 
+MISTOS_MAINTAINER := "KonekoDev"
 WITH_GMS := false
 WITH_MICROG := true
 
