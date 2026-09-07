@@ -4,9 +4,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_creek.mk
+    $(LOCAL_DIR)/lineage_creek.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_creek-user \
-    derp_creek-userdebug \
-    derp_creek-eng
+    lineage_creek-user \
+    lineage_creek-userdebug \
+    lineage_creek-eng
