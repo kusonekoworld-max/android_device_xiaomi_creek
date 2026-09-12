@@ -66,7 +66,6 @@ ro.vendor.audio.identify_low_end_device=false
 ro.vendor.audio.misound.bluetooth.enable=true
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
-ro.vendor.dolby.dax.version=DAX3_3.8.5.20_r1
 ro.vendor.audio.dolby.dax.version=DAX3_3.8.5.20_r1
 ro.vendor.audio.dolby.dax.support=true
 ro.vendor.audio.dolby.eq.half=true

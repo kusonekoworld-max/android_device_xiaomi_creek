@@ -670,3 +670,6 @@ PRODUCT_PACKAGES += \
 
 # Disable blur rendering
 TARGET_SUPPORTS_BLUR := false
+
+PRODUCT_PACKAGES += \
+    LunarisDolby
