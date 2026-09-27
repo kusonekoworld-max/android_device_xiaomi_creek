@@ -35,13 +35,13 @@
 import /vendor/etc/init/hw/init.qti.kernel.rc
 
 on early-init
-    write /proc/sys/kernel/sched_boost 1
+    write /proc/sys/kernel/sched_boost 0
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.early_init.sh
     setprop ro.soc.model ${ro.vendor.qti.soc_model}
 
 on init
-    write /dev/stune/foreground/schedtune.sched_boost_no_override 1
-    write /dev/stune/top-app/schedtune.sched_boost_no_override 1
+    write /dev/stune/foreground/schedtune.sched_boost_no_override 0
+    write /dev/stune/top-app/schedtune.sched_boost_no_override 0
     write /dev/stune/schedtune.colocate 0
     write /dev/stune/background/schedtune.colocate 0
     write /dev/stune/system-background/schedtune.colocate 0
