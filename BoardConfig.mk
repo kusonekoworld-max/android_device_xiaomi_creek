@@ -77,6 +77,7 @@ BOARD_BOOTCONFIG := \
     androidboot.usbcontroller=4e00000.dwc3
 
 # Basic kernel cmdline
+# Performance note: RCU callbacks remain offloaded; no forced expedited RCU mode is added here.
 BOARD_KERNEL_CMDLINE := \
     disable_dma32=on \
     rcu_nocbs=all \

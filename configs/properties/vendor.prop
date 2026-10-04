@@ -132,7 +132,7 @@ ro.vendor.audio.feature.fade=true
 ro.vendor.audio.game.mode=true
 
 # Bluetooth
-persist.bluetooth.a2dp_offload.disabled=true
+persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive 
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
@@ -212,9 +212,9 @@ vendor.display.comp_mask=8192
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery_dump=1
-vendor.display.disable_idle_time_video=1
+vendor.display.disable_idle_time_video=0
 vendor.display.disable_layer_stitch=0
-vendor.display.disable_rotator_ubwc=1
+vendor.display.disable_rotator_ubwc=0
 vendor.display.disable_scaler=0
 vendor.display.disable_sdr_dimming=0
 vendor.display.enable_allow_idle_fallback=1
@@ -319,7 +319,7 @@ persist.vendor.radio.snapshot_timer=5
 persist.vendor.rcs.singlereg.feature=1
 
 # Sensors
-persist.vendor.sensors.debug.ssc_qmi_debug=true
+persist.vendor.sensors.debug.ssc_qmi_debug=false
 persist.vendor.sensors.enable.bypass_worker=true
 persist.vendor.sensors.enable.rt_task=false
 persist.vendor.sensors.hal_trigger_ssr=false
