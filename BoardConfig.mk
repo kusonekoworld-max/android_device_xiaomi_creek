@@ -83,7 +83,6 @@ BOARD_KERNEL_CMDLINE := \
     rcu_nocbs=all \
     rcutree.enable_rcu_lazy=1 \
     rcu_normal=1 \
-    rcu_expedited=1 \
     kasan=off \
     bootinfo.fingerprint=$(LINEAGE_VERSION) \
     swinfo.fingerprint=$(LINEAGE_VERSION)
