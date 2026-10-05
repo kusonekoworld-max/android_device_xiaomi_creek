@@ -424,3 +424,6 @@ on property:vendor.audio.voice.receiver.status=off && property:sys.boot_complete
 on property:vendor.audio.voice.receiver.status=on
     start wifiSarTool_dsi2
 #Add end
+
+# Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
