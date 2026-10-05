@@ -46,3 +46,5 @@ TARGET_ENABLE_BLUR := true
 
 # Whether to ship aperture camera, false by default
 PRODUCT_NO_CAMERA := false
+
+$(call inherit-product, device/xiaomi/creek/libperfmgr.mk)
