@@ -416,5 +416,3 @@ case "$console_config" in
 	;;
 esac
 
-# Post-setup services
-setprop vendor.post_boot.parsed 1
