@@ -52,14 +52,6 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.power</name>
-        <version>6</version>
-        <interface>
-            <name>IPower</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
         <name>android.hardware.thermal</name>
         <version>2</version>
         <interface>
