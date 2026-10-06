@@ -426,4 +426,5 @@ on property:vendor.audio.voice.receiver.status=on
 #Add end
 
 # Enable PowerHAL hint processing
+on property:sys.boot_completed=1
     setprop vendor.powerhal.init 1
