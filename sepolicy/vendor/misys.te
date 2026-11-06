@@ -13,13 +13,13 @@ add_hwservice(vendor_misys, vendor_misys_hwservice)
 allow vendor_misys vendor_misys_service:service_manager { add find };
 
 # Root/system service writing to persist (dirs created by .rc)
-allow vendor_misys self:capability { dac_override dac_read_search };
+# allow vendor_misys self:capability { dac_override dac_read_search };
 allow vendor_misys { mnt_vendor_file persist_file }:dir create_dir_perms;
 allow vendor_misys { mnt_vendor_file persist_file }:file create_file_perms;
 
 # Load HAL libs from /vendor
 allow vendor_misys vendor_file:dir r_dir_perms;
-allow vendor_misys vendor_file:file rx_file_perms;
+allow vendor_misys vendor_file:file { r_file_perms execute map };
 
 # MIUI Camera (platform app) -> MiSys
 allow platform_app_all vendor_misys_service:service_manager find;

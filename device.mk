@@ -732,4 +732,11 @@ PRODUCT_PACKAGES += \
 
 # Xiaomi MiSys AIDL interface (used by MIUI Camera)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/vintf/vendor.xiaomi.hardware.misys.common.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys.common.xml
+
+DEVICE_MANIFEST_FILE += device/xiaomi/creek/configs/vintf/vendor.xiaomi.hardware.misys.common.xml
+
+# AGMIPC HIDL interface namespace
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm6225/audio/agm/ipc/HwBinders/interfaces
+
+# PAL HIDL interface namespace
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm6225/audio/pal/ipc/HwBinders/interfaces
